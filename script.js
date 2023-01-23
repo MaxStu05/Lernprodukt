@@ -8,3 +8,8 @@ xhr.onreadystatechange = function() {
     }
 };
 xhr.send();
+
+function DM() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
