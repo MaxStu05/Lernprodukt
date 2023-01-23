@@ -1,4 +1,13 @@
+body {
+  background-color: var(--white);
+}
+
+.IP-box {
+  height: 20px;
+}
+
 #ip {
+  color: var(--black);
   position: relative;
   font-size: 10px;
   font-weight: bold;
@@ -7,8 +16,30 @@
 }
 
 .txt {
+  color: var(--black);
   position: absolute;
   font-size: 10px;
   font-weight: bold;
   font-family: monospace;
+}
+
+.href {
+  color: var(--black);
+  text-decoration: none;
+  color: var(--black);
+  border: 1px solid;
+  font-size: 15px;
+  padding: 1px 1px 1px 1px;
+}
+
+
+
+:root {
+  --black: black;
+  --white: white;
+}
+
+.dark-mode {
+  --black: grey;
+  --white: rgb(40, 40, 40);
 }
