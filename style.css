@@ -1,0 +1,14 @@
+#ip {
+  position: relative;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: monospace;
+  padding-left: 50px;
+}
+
+.txt {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: monospace;
+}
