@@ -1,5 +1,10 @@
-fetch('https://api.ipify.org?format=json')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById('ip').innerHTML = data.ip;
-  });
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://api.ipify.org?format=json", true);
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        var data = JSON.parse(xhr.responseText);
+        var ip = data.ip;
+        document.getElementById("ip").innerHTML = ip;
+    }
+};
+xhr.send();
